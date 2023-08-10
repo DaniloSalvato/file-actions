@@ -7,7 +7,6 @@ namespace TextEditor
         static void Main(string[] args)
         {
             Menu();
-            Console.Read();
         }
 
         static void Menu()
@@ -64,7 +63,7 @@ namespace TextEditor
         static void Save(string text)
         {
             Console.Clear();
-            Console.WriteLine("Qual caminho para salvar o arquivo?");
+            Console.WriteLine("Qual o caminho para salvar o arquivo?");
             var path = Console.ReadLine();
 
             using (var file = new StreamWriter(path))
